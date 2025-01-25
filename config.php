@@ -1,18 +1,16 @@
 <?php
 
-   $dbHost = 'localhost';
-   $dbuserName = 'root';
+   $dbHost = 'localhost:3306';
+   $dbuserName = 'root';  // Variável com 'u' minúsculo
    $dbPassword = '';
    $dbName = 'formulario_joao'; 
 
-   $conexao = new mysqli($dbHost, $dbuserName, $dbPassword, $dbName);
+   $conexao = new mysqli($dbHost, $dbuserName, $dbPassword, $dbName);  // Corrigido para $dbuserName
 
+//if ($conexao->connect_errno) {
+//    echo "ERRO";
+//} else {
+//    echo "Conexão efetuada com sucesso ";
+//}
 
-  // if($conexao->connect_error) 
-   //     echo "Erro: " . $conexao->connect_error; 
-   //else
-  // {
-  //      echo "Conexão Efetuada com Sucesso"; 
-  //}
-
-    ?>
+?>
